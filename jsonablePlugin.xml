@@ -1,0 +1,26 @@
+<library path="src">
+  <!-- <class name="Room jsonable plugin" type="jsonable_module.plugin.JsonablePlugin" base_class_type="rqt_gui_py::Plugin"> -->
+  <class name="Room jsonable plugin" type="jsonable_module.choose_sequence_of_jsonables.ChooseSequenceOfJsonablesPlugin" base_class_type="rqt_gui_py::Plugin">
+    <description>
+      An example Python GUI plugin: to create a room
+    </description>
+    <qtgui>
+      <!-- optional grouping...
+      <group>
+        <label>Group</label>
+      </group>
+      <group>
+        <label>Subgroup</label>
+      </group>
+      -->
+      <group>
+        <label>Room selection</label>
+        <icon type="theme">folder</icon>
+      </group>
+
+      <label>Room Python Plugin</label>
+      <icon type="theme">system-help</icon>
+      <statustip>Great user interface to provide real value.</statustip>
+    </qtgui>
+  </class>
+</library>

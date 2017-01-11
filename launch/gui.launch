@@ -1,0 +1,12 @@
+<launch>
+
+	<param name="playing_back" type="bool" value="false"/>
+
+	<!-- MIGHT BE NECESSARY: rqt --force-discover -->
+    <node name="rqt_gui" pkg="planner_example" type="start_jsonable_gui.py" output="screen"/>
+
+    <node name="service_time_sequencer" pkg="planner_example" type="service_time_sequencer.py" output="screen"/>
+
+	<node name="name" pkg="planner_example" type="jsonable_example.py" output="screen"/>    
+
+</launch>
